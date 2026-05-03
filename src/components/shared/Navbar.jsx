@@ -14,7 +14,7 @@ const Navbar = () => {
             </ul>
             <div className="flex justify-between items-center gap-2">
                 <Image src={userAvatar} alt='user img' width={40} height={40}></Image>
-                <button className='btn btn-primary'><Link href={'/login'}>Login</Link></button>
+                <Link href={'/login'}> <button className='btn btn-primary'>Login</button></Link>
             </div>
         </div>
     );
