@@ -1,14 +1,30 @@
 "use client"
+import { authClient } from '@/lib/auth-client';
 import Link from 'next/link';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 
 const RegisterPage = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const handleRegisterFunc = (data) => console.log(data, 'data');
-    // const email = watch('email')
-    // const pass = watch('password')
-    // console.log(email, pass ,'lekha');
+    const handleRegisterFunc = async (data) => {
+        const { name, email, photo, password } = data;
+        // console.log(data, 'data');
+        const { data: res, error } = await authClient.signUp.email({
+            name: name,
+            email: email,
+            password: password,
+            image: photo,
+            callbackURL: '/'
+        })
+        console.log(res,'data', error, " error");
+        if(error){
+            alert(error.message)
+        }
+        if(res){
+            alert("Sign Up Successfully")
+        }
+    }
+
     return (
         <div className='container mx-auto bg-slate-100 min-h-[80vh] flex justify-center items-center'>
             <div className="bg-white p-4 rounded-xl">
