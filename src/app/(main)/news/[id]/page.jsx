@@ -5,15 +5,15 @@ import React from 'react';
 import { CiBookmark, CiShare2 } from 'react-icons/ci';
 import { FaEye, FaStar } from 'react-icons/fa';
 
-export const generateMetadata = async ({ params, searchParams }) =>{
-    const {id} = await params;
+export const generateMetadata = async ({ params, searchParams }) => {
+    const { id } = await params;
     // console.log(id, 'details meta');
     const news = await getNewsDetailsId(id);
-     return {
-    title: news.title,
-    description: news.details,
-  }
-    
+    return {
+        title: news.title,
+        description: news.details,
+    }
+
 }
 
 const NewsDetailsPage = async ({ params }) => {
@@ -36,7 +36,7 @@ const NewsDetailsPage = async ({ params }) => {
                         </div>
                         <div className="flex gap-1">
                             <CiShare2 />
-                            <CiBookmark/>
+                            <CiBookmark />
                         </div>
                     </div>
                     <h2 className="card-title">{news.title}</h2>
