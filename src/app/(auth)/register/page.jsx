@@ -16,7 +16,7 @@ const RegisterPage = () => {
             image: photo,
             callbackURL: '/'
         })
-        console.log(res,'data', error, " error");
+        // console.log(res,'data', error, " error");
         if(error){
             alert(error.message)
         }
