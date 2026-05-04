@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📰 Dragon News Project
 
-## Getting Started
+<p align="center">
+  <a href="https://dragon-news-project-mu.vercel.app">
+    <img src="https://img.shields.io/badge/Live%20Site-Visit-green?style=for-the-badge" />
+  </a>
+  <a href="https://github.com/Miskat-BD/Dragon-News-Project">
+    <img src="https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge" />
+  </a>
+</p>
 
-First, run the development server:
+---
+
+## 🚀 Project Overview
+
+**Dragon News** is a modern news web application where users can browse news, explore categories, and view detailed articles with a clean and responsive UI.
+
+---
+
+## ✨ Features
+
+* 🗞️ Browse latest news articles
+* 📂 Category-based filtering
+* 📄 Detailed news view
+* 🔐 Authentication (Sign Up & Sign In)
+* ⚡ Fast and responsive UI
+* 📱 Mobile-friendly design
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** React.js, Next.js
+* **Styling:** Tailwind CSS
+* **UI Library:** HeroUI
+* **Authentication:** Better Auth
+* **Database:** MongoDB
+* **Deployment:** Vercel
+
+---
+
+
+## ⚙️ Installation & Setup
+
+### 📥 Clone Repository
+
+```bash
+git clone https://github.com/Miskat-BD/Dragon-News-Project.git
+cd Dragon-News-Project
+```
+
+### 📦 Install Dependencies
+
+```bash
+npm install
+```
+
+### 🔐 Environment Variables
+
+Create a `.env` file and add:
+
+```env
+BETTER_AUTH_SECRET=your_secret_key
+BETTER_AUTH_URL=http://localhost:3000
+AUTH_DB_URI=your_mongodb_connection_string
+```
+
+### ▶️ Run Project
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📌 Future Improvements
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* 🔍 Add search functionality
+* ⭐ Bookmark/save news
+* 🌐 Real-time API integration
+* 🎨 UI/UX improvements
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🙋‍♂️ Author
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Miskat Miskat**
+CSE Student | Aspiring Web Developer
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## ⭐ Support
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If you like this project, give it a ⭐ on GitHub!
