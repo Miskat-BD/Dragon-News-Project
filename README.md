@@ -82,12 +82,7 @@ npm run dev
 
 ---
 
-## 🙋‍♂️ Author
 
-**Miskat Miskat**
-CSE Student | Aspiring Web Developer
-
----
 
 ## ⭐ Support
 
